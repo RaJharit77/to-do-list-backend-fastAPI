@@ -88,3 +88,7 @@ def delete_todo(todo_id: int):
     conn.commit()
     conn.close()
     return {"message": "Todo deleted"}
+
+@app.get("/health")
+def health_check():
+    return {"status": "ok"}
