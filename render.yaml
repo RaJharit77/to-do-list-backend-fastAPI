@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: to-do-list-app
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: ./start.sh
+    plan: free
+    envVars:
+      - key: FLASK_ENV
+        value: production
+    autoDeploy: true
