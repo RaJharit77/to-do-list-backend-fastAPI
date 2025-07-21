@@ -8,6 +8,7 @@ app = FastAPI()
 
 # Configuration CORS plus sécurisée
 origins = [
+    "https://to-do-list-task-app-lia.vercel.app/",
     "https://to-do-list-task-app.onrender.com",
     "http://localhost:5173" 
 ]
