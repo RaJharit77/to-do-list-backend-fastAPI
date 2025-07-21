@@ -1,9 +1,18 @@
-from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel
+from fastapi import FastAPI, HTTPException # type: ignore
+from pydantic import BaseModel # type: ignore
 from sqlite3 import connect, OperationalError
 from datetime import datetime
+from fastapi.middleware.cors import CORSMiddleware # type: ignore
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Modèle Pydantic
 class TodoItem(BaseModel):
