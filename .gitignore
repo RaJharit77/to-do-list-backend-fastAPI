@@ -1,1 +1,3 @@
 backend/todos.db
+# .env
+.env
