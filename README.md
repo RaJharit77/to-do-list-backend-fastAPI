@@ -24,6 +24,8 @@ Vous pouvez interagir avec l'API en envoyant des requêtes HTTP (GET, POST, PUT,
 
 - Python
 - FastAPI
+- SQLite
+- pydantic
 
 ## Démarrer localement
 

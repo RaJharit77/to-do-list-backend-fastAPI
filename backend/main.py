@@ -6,9 +6,16 @@ from fastapi.middleware.cors import CORSMiddleware # type: ignore
 
 app = FastAPI()
 
+# Configuration CORS plus sécurisée
+origins = [
+    "https://to-do-list-task-app.onrender.com",
+    "http://localhost:5173" 
+]
+
+# Middleware CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
