@@ -1,5 +1,5 @@
 fastapi
 uvicorn
-sqlite
+- sqlite
 python-dotenv
 pydantic
