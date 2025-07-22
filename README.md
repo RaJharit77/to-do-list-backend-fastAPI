@@ -18,7 +18,9 @@ L'API est déployée sur Render et accessible à l'adresse suivante :
 
 ## Utilisation
 
-Vous pouvez interagir avec l'API en envoyant des requêtes HTTP (GET, POST, PUT, DELETE) à l'aide de Postman, soit en local, soit en utilisant l'URL du projet déployé.
+Vous pouvez interagir avec l'API en envoyant des requêtes HTTP (GET, POST, PUT, DELETE) à l'aide de Postman ou de tout autre outil similaire, soit en local, soit via l'URL du projet déployé.
+
+Pour vérifier que l'API fonctionne, envoyez une requête GET à `${URL}/health` ; la réponse sera `OK`.
 
 ## Technologies
 
