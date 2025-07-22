@@ -6,6 +6,6 @@ services:
     startCommand: ./start.sh
     plan: free
     envVars:
-      - key: FLASK_ENV
+      - key: ENV
         value: production
     autoDeploy: true
